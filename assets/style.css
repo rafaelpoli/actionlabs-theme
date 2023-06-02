@@ -1,0 +1,417 @@
+/**
+ * Main Styles
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+
+/*
+* Header
+*/
+
+header {
+  max-height: 165px;
+  background-color: #05CFFC;
+  padding: 15px 150px;
+}
+.header-container {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+}  
+.logo {
+  width: 30%;
+}
+.site-header-menu {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.menu-meu-menu-container .menu {
+  display: flex;
+  width: 100%;
+  column-gap: 15px;
+}
+#menu-meu-menu ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu a {
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font: normal 500 12px 'Roboto', sans-serif;
+}
+
+/*
+* Footer
+*/
+
+footer {
+  max-height: 165px;
+  background-color: #05CFFC;
+  padding: 30px 150px 37px 150px;
+}
+.footer-container {
+  align-items: center; 
+  width: 100%;
+}  
+.divisor {
+  width: 100%;
+  color: white;
+  border: 1px solid white;
+}
+.footer-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  color: white;
+  font: normal 400 12px 'Roboto', sans-serif;
+  line-height: 16px;
+}
+
+/*
+* Template: Front Page
+*/
+.banner-home {
+  height: 485px;
+  background-image: url('/wp-content/themes/action-labs/assets/images/banner_home.png');
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-home h1{
+  position: relative;
+  display: flex;
+  margin-left: 150px;
+  color: white;
+  align-items: center;
+  font: normal 600 64px 'Avenir',sans-serif;
+  line-height: 60px;
+  z-index: 2;
+}
+
+.card-section {
+  display: flex;
+  margin: 50px 150px;
+  margin-top: -100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  font: normal 400 12px 'Avenir',sans-serif;
+  text-transform: uppercase;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card .title {
+  font: normal 800 24px 'Avenir',sans-serif;
+  color: #01758D;
+  margin: 10px 0px;
+  line-height: 31px;
+}
+
+.content p {
+  font: normal 400 14px 'Avenir',sans-serif;
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.card .read-more {
+  font: normal 500 11px 'Avenir',sans-serif;
+  color: #01758D;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*
+* Template Sobre Nós
+*/
+
+.sobre-nos {
+  width: 84%;
+  margin: auto;
+}
+.sobre-nos h1 {
+  font: normal 800 44px 'Avenir', sans-serif;
+  color: #01758D;
+}
+.sobre-nos h2 {
+  font: normal 600 44px 'Avenir', sans-serif;
+  color: #525252;
+  margin-top: -20px;
+}
+.sobre-nos p {
+  font: normal 400 18px 'Roboto', sans-serif;
+  color: #525252;
+  line-height: 28px;
+  margin: 30px 0px;
+}
+
+/*
+* Template: Single Post
+*/
+
+.banner-post {
+  height: 485px;
+  background-image: url('/wp-content/themes/action-labs/assets/images/banner_post.png');
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-post::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dados-post {
+  width: 40%;
+  margin-top: -250px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  background-color: white;
+  padding: 50px;
+  z-index: 4;
+  position: relative;
+}
+.div-imagem-destacada {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.single-categoria {
+  color: white;
+  margin: 30px 0px;
+  border-radius: 15px;
+}
+.categoria {
+  color: white;
+  background-color: #01758D;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.single-categoria a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal 400 12px 'Avenir', sans-serif;
+}
+.meta-data {
+  display: flex;
+  column-gap: 10px;
+  color: #939393;
+  margin: 15px 0px;
+  font: normal 400 14px 'Avenir', sans-serif;
+}
+.meta-data a {
+  color: #939393;
+  text-decoration: none;
+}
+.tag {
+  display: flex;
+  column-gap: 5px;
+}
+.titulo-single-post {
+  font: normal 800 40px 'Avenir', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  line-height: 52px;
+}
+.single-post-content {
+  font: normal 400 18px 'Roboto', sans-serif;
+  line-height: 28px;
+}
+.autor-single-post {
+  font: normal 400 12px 'Roboto', sans-serif;
+  color: black;
+}
+
+/*
+* Versão Mobile
+*
+* Header
+*/
+
+@media screen and (max-width: 768px) {
+  header {
+    max-height: 165px;
+    background-color: #05CFFC;
+    padding: 15px 15px;
+  }
+}
+
+/*
+* Footer
+*/
+
+@media screen and (max-width: 768px) {
+  footer {
+    max-height: 165px;
+    background-color: #05CFFC;
+    padding: 15px;
+  }
+}
+
+/*
+* Template: Front Page
+*/
+@media screen and (max-width: 768px) {
+  .banner-home {
+    justify-content: center;
+  }
+  .banner-home h1{
+    margin: 15px;
+    font: normal 600 34px 'Avenir',sans-serif;
+    line-height: 40px;
+  }
+  .card-section {
+    margin: 50px 15px;
+    margin-top: -50px;
+  }
+  
+  .card {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+ 
+  .card .title {
+    font: normal 800 24px 'Avenir',sans-serif;
+    color: #01758D;
+    margin: 10px 0px;
+    line-height: 31px;
+  }
+  
+  .content p {
+    font: normal 400 14px 'Avenir',sans-serif;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: #666666;
+  }
+  
+  .card .read-more {
+    font: normal 500 11px 'Avenir',sans-serif;
+    color: #01758D;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+/*
+* Template Sobre Nós
+*/
+@media screen and (max-width: 768px) {
+  .sobre-nos h1 {
+    font: normal 800 34px 'Avenir', sans-serif;
+  }
+  .sobre-nos h2 {
+    font: normal 600 20px 'Avenir', sans-serif;
+  }
+  .sobre-nos p {
+    text-align:justify;
+  }
+}
+
+/*
+* Template: Single Post
+*/
+@media screen and (max-width: 768px) {
+  .banner-post {
+    height: 300px;
+  }
+  .dados-post {
+    width: 80%;
+    margin: 50px auto;
+    margin-top: -150px;
+    padding: 15px;
+  }
+  .div-imagem-destacada {
+    height: 210px;
+  }
+  .single-categoria {
+    color: white;
+    margin: 30px 0px;
+    border-radius: 15px;
+  }
+  .meta-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    font: normal 400 12px 'Avenir', sans-serif;
+  }
+  .calendar {
+    display: flex;
+    column-gap: 5px;
+  }
+  .tag {
+    display: flex;
+    column-gap: 5px;
+  }
+  .titulo-single-post {
+    font: normal 800 27px 'Avenir', sans-serif;
+    line-height: 30px;
+  }
+  .single-post-content {
+    text-align: justify;
+  }
+}
